@@ -4,6 +4,8 @@
 #include <iostream>
 #include <limits>
 
+#include <cstdint>
+
 namespace nthash {
 
 inline void
