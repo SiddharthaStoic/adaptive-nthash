@@ -1,6 +1,7 @@
 import subprocess
 import time
 import matplotlib.pyplot as plt
+import pandas as pd
 
 iterations = 1000
 adaptive_times = []
@@ -20,6 +21,15 @@ for _ in range(iterations):
     end = time.perf_counter()
     normal_times.append(end - start)
 
+# Save to CSV
+df = pd.DataFrame({
+    "Iteration": list(range(1, iterations + 1)),
+    "Adaptive_Hash_Time": adaptive_times,
+    "Normal_ntHash_Time": normal_times
+})
+df.to_csv("benchmark_times.csv", index=False)
+
+# Plot
 plt.figure(figsize=(12, 6))
 plt.plot(adaptive_times, label='Adaptive Hash', alpha=0.7)
 plt.plot(normal_times, label='Normal ntHash', alpha=0.7)
@@ -29,5 +39,5 @@ plt.title('ntHash vs Adaptive Hashing Benchmark (1000 runs)')
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("benchmark_comparison.png", dpi=300)
+plt.savefig("benchmark_comparison2.png", dpi=300)
 plt.show()
