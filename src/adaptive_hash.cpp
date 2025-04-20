@@ -1,3 +1,11 @@
+/**
+ * @file adaptive_hash.cpp
+ * @brief Adaptive entropy-based spaced seed hashing implementation.
+ *
+ * Dynamically switches between sparse and dense spaced seeds based on local Shannon entropy.
+ * Optimizes hashing in low- and high-complexity genomic regions for performance.
+ */
+
 #include "nthash/nthash.hpp"
 #include "nthash/entropy.hpp"
 

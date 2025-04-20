@@ -1,3 +1,10 @@
+/**
+ * @file entropy.cpp
+ * @brief Implementation of the RollingEntropy class.
+ *
+ * Maintains base frequencies and updates entropy efficiently using a rolling window.
+ */
+
 #include "nthash/entropy.hpp"
 #include <cmath>
 

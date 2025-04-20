@@ -1,3 +1,11 @@
+/**
+ * @file entropy.hpp
+ * @brief Rolling entropy calculator for DNA sequences.
+ *
+ * Efficiently computes Shannon entropy over a sliding window of bases (A, C, G, T).
+ * Used to detect complexity variation in real-time during k-mer processing.
+ */
+
 #pragma once
 #include <array>
 #include <string>

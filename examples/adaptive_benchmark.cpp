@@ -1,3 +1,8 @@
+/**
+ * @file normal_benchmark.cpp
+ * @brief Benchmarks the original ntHash spaced seed implementation.
+ */
+
 #include <chrono>
 #include <iostream>
 #include "nthash/adaptive_hash.hpp"
