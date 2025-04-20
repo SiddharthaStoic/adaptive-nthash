@@ -51,7 +51,6 @@ examples = [
     ['adaptive_benchmark', 'examples/adaptive_benchmark.cpp'],
     ['entropy_benchmark',  'examples/entropy_benchmark.cpp'],
     ['normal_benchmark',   'examples/normal_benchmark.cpp'],
-    ['spaced_seed_hashing','examples/spaced_seed_hashing.cpp'],
 ]
 
 foreach example : examples
